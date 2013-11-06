@@ -55,6 +55,10 @@ namespace Groceries.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
+			if (Util.IsiOS7) {
+				EdgesForExtendedLayout = UIRectEdge.None;
+			}
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 			ConfigureView ();

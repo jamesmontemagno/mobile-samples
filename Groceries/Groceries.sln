@@ -282,7 +282,7 @@ Global
 		{E4FD0483-389C-4E2C-9488-BB3FBBC500A4} = {1EEF83FF-841C-4787-ABBB-78B7B7557AC6}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Groceries.Droid\Groceries.Droid.csproj
+		StartupItem = Groceries.iOS\Groceries.iOS.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

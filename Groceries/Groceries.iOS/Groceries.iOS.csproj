@@ -20,8 +20,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <Optimize>true</Optimize>
@@ -41,6 +43,12 @@
     <ConsolePause>false</ConsolePause>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <Optimize>true</Optimize>
@@ -100,6 +108,7 @@
     <Compile Include="DetailViewController.designer.cs">
       <DependentUpon>DetailViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
@@ -113,12 +122,10 @@
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="mbprogresshud">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>0.5.2</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="parse">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.1.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
@@ -127,5 +134,6 @@
     <BundleResource Include="..\Sample-Data\Item.json">
       <Link>Sample-Data\Item.json</Link>
     </BundleResource>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
 </Project>
